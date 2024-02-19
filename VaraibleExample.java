@@ -12,7 +12,7 @@ public class VaraibleExample {
         String name;
         name = "Roberto";
 
-        if (number < 10){
+        if (number < 10) {
             name = "Pepito";
         }
         System.out.println("nombre = " + name);
