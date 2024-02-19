@@ -3,7 +3,7 @@ public class VaraibleExample {
         int number = 9; //Si pongo el número entre comillas lo detecta como un string y falla
         int number2 = 5;
         boolean value = true;
-        if(value){
+        if (value) {
             System.out.println("Number = " + number);
             number2 = 7; //va a retornar 5 si cambio el booleano a false
         }
@@ -12,7 +12,7 @@ public class VaraibleExample {
         String name;
         name = "Roberto";
 
-        if(number < 10){
+        if (number < 10){
             name = "Pepito";
         }
         System.out.println("nombre = " + name);
