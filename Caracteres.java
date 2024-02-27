@@ -9,7 +9,7 @@ public class Caracteres {
         char nuevaLinea = '\n';
         System.out.println("El caracter 1 es: " + tabulador + caracter);
         System.out.println("El caracter 2 es " + nuevaLinea + caracter2);
-        System.out.println("El caracter 2 es" + System.lineSeparator()+ caracter2); //ejemplo con un metodo de java para separar lineas
+        System.out.println("El caracter 2 es" + System.lineSeparator()+ caracter2); //ejemplo con llamada a un metodo de java para separar lineas
 
     }
 }
