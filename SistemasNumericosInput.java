@@ -1,13 +1,27 @@
 import javax.swing.*;
+
 public class SistemasNumericosInput {
     public static void main(String[] args) {
 
-        String numeroStr = JOptionPane.showInputDialog(null, "Ingrese un numero entero"); //JOptionPane me proporciona métodos para mostrar ventanas
-        int numeroDecimal = Integer.parseInt(numeroStr); //el método parseInt convierte el input de la variable numeroStr en un Int
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Ingresar numero entero:");
+        String numeroStr = scanner.nextLine();
+        int numeroDecimal = 0;
+        try{
+            numeroDecimal = integer.parseInt(numeroStr);
+        } catch (NumberFormatException e){
+            System.out.println("Error tenés que ingresar un número enteroooo!!!");
+            main(args);
+            System.exit(0);
+        }
+        System.out.println("numeroDecimal = " numeroDecimal);
+
+        String resultadoBinario = "numero binario de " + numeroDecimal + " = " + Integer.toBinaryString(numeroDecimal);
+        String resultadoOctal = "numero octal de " + numeroDecimal + " = " + Integer.toOctalString(numeroDecimal);
 
         String mensaje = ("Numero binario de " + numeroDecimal + " = " + Integer.toBinaryString(numeroDecimal));
         mensaje += "\nNumero octal de " + numeroDecimal + " = " + Integer.toOctalString(numeroDecimal); //concatenación dinámica
         mensaje += "\nNumero hexadecimal de " + numeroDecimal + " = " + Integer.toHexString(numeroDecimal);
-        JOptionPane.showMessageDialog(null, mensaje);
+        System.out.println(mensaje);
     }
 }
