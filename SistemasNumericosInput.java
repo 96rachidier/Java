@@ -1,5 +1,5 @@
 import javax.swing.*;
-
+import java.util.Scanner;
 public class SistemasNumericosInput {
     public static void main(String[] args) {
 
@@ -8,7 +8,7 @@ public class SistemasNumericosInput {
         String numeroStr = scanner.nextLine();
         int numeroDecimal = 0;
         try{
-            numeroDecimal = integer.parseInt(numeroStr);
+            numeroDecimal = Integer.parseInt(numeroStr);
         } catch (NumberFormatException e){
             System.out.println("Error tenés que ingresar un número enteroooo!!!");
             main(args);
