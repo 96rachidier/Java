@@ -24,5 +24,6 @@ public class SistemasNumericosInput {
         mensaje += "\nNumero octal de " + numeroDecimal + " = " + Integer.toOctalString(numeroDecimal); //concatenación dinámica
         mensaje += "\nNumero hexadecimal de " + numeroDecimal + " = " + Integer.toHexString(numeroDecimal);
         System.out.println(mensaje);
+        main(args);
     }
 }
